@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Pelanggan- Toko Bahan Kue Cici Mey</title>
+  <style>
+    /* Import font dari Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+    /* Style body */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #4fc3f7;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Judul toko */
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 25px;
+    }
+
+    /* Login */
+    .login-box {
+      background: #fff8f1;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 320px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .login-box input[type="submit"] {
+      background-color: #327fa2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #103d53;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #327fa2;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Toko Bahan Kue Cici Mey</h1>
+    <div class="login-box">
+      <h2>Login Akun</h2>
+      <!-- Login Pelanggan -->
+      <form action="dashboard.html">
+        <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        <input type="submit" value="Login">
+      </form>
+      <!-- direct link ke login admin -->
+      <a href="adminlogin.html">Login sebagai Admin</a>
+    </div>
+  </div>
+</body>
+</html>
